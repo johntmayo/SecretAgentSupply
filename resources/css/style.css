@@ -74,6 +74,10 @@ nav li {
   padding: 20px 40px 20px 40px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 
 .all-products {
   width: 100%;
@@ -96,7 +100,7 @@ nav li {
   max-width: 8em;
 }
 
-.product {
+.product-pen, .product-watch, .product-glasses {
   width: 30%;
 }
 
@@ -145,4 +149,95 @@ footer {
 
   padding: 5em 0;
   margin-top: 4em;
+}
+
+
+
+/*Begin Media Queries*/
+@media only screen and (max-width: 1024px) {
+
+.banner-text {
+    position: relative;
+    top: 9em;
+    left: 0%;
+  }
+
+
+.info {
+  width: 35%;
+}
+
+.product-glasses {
+  display: none;
+}
+
+.product-pen, .product-watch {
+  width: 47%;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+
+} /*end 1024 media query */
+
+
+@media only screen and (max-width: 470px) {
+
+.banner {
+  height: 15rem;
+}
+
+.banner-text {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    color: white;
+    position: relative;
+    top: 9em;
+    left: 0%;
+  }
+
+
+.new-arrival {
+    font-size: .77rem;
+}
+
+.headline {
+    font-size: 1rem;
+}
+
+.all-products {
+  justify-content: center;
+}
+
+.product-watch {
+  display: none;
+}
+
+.product-pen {
+  width: 90%;
+}
+
+.business-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info {
+  padding-top: .5rem;
+  padding-bottom: 0rem;
+  width: 90%;
+
+}
+
+
+
 }
